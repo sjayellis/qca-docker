@@ -1,0 +1,4 @@
+{
+    "name": "QCA Development",
+    "image": "ghcr.io/sjayellis/qca-docker:latest"
+  }
