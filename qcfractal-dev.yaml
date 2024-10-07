@@ -1,0 +1,73 @@
+name: qcfractal-dev
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+
+  - ipykernel
+  - nglview
+
+  # QCPortal dependencies
+  - numpy
+  - msgpack-python
+  - requests
+  - pyyaml
+  - pydantic
+  - zstandard
+  - apsw>=3.42
+  - qcelemental<0.50a0
+  - tabulate
+  - tqdm
+  - pandas
+  - pyjwt
+  - packaging
+  - typing_extensions
+  - python-dateutil
+  - pytz
+  - sqlitedict
+
+  # QCFractalCompute dependencies
+  - parsl
+
+  # QCFractal dependencies
+  - flask
+  - flask-jwt-extended
+  - gunicorn
+  - bcrypt
+  - sqlalchemy>=2.0
+  - alembic
+  - psycopg2
+  - geoip2
+
+  # QCFractal Services
+  - torsiondrive
+  - qcmanybody
+
+  # QCArchiveTesting dependencies
+  - pytest
+  - pytest-xdist
+  - pytest-cov
+  - codecov
+
+  # Docs & formatting
+  - black
+
+  # Worker packages
+  - qcengine<0.50a0
+  - psi4>=1.9.1
+  - rdkit
+  - mopac
+
+  # Conda package building stuff 
+  - boa
+  - conda-verify
+  - anaconda-client
+
+  - pip:
+    - migra
+    - build
+    - twine
+    - "geometric @ git+https://github.com/leeping/geomeTRIC"
